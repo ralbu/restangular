@@ -23,7 +23,7 @@ It's a perfect fit for any WebApp that consumes data from a RESTful API.
 	- [Using Restangular](#using-restangular)
 		- [Creating Main Restangular object](#creating-main-restangular-object)
 		- [Let's code!](#lets-code)
-        - [Post on root element](#post-root)
+        - [Post on root element](#post-on-root-element)
 	- [Configuring Restangular](#configuring-restangular)
 		- [Properties](#properties)
 			- [setBaseUrl](#setbaseurl)
