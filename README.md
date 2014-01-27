@@ -23,6 +23,7 @@ It's a perfect fit for any WebApp that consumes data from a RESTful API.
 	- [Using Restangular](#using-restangular)
 		- [Creating Main Restangular object](#creating-main-restangular-object)
 		- [Let's code!](#lets-code)
+        - [Post on root element](#post-root)
 	- [Configuring Restangular](#configuring-restangular)
 		- [Properties](#properties)
 			- [setBaseUrl](#setbaseurl)
@@ -297,6 +298,17 @@ $scope.account = account.get({single: true});
 account.customPOST({name: "My Message"}, "messages", {param: "myParam"}, {})
 
 
+````
+
+### Post on root element
+
+For the cases when you need to post on a 'root' element use the following code. It will not fetch the account, will only create the Restangular object and post on the root.
+
+````javascript
+var newAccount = {'name':'user'}
+
+// POST to /account. Post body will contain the newAccount object
+Restangular.all("account").post(newAccount);
 ````
 
 ## Configuring Restangular
